@@ -7,4 +7,4 @@ dkr-it:
 	docker run -it $(APP_NAME):latest /bin/sh
 
 dkr-start-app:
-	docker run -p 3000:3000 $(APP_NAME):latest node /todo-app/server.js
+	docker run -p 3000:3000 $(APP_NAME):latest ./pre-start.sh
