@@ -28,7 +28,7 @@ fi
 sleep 2
 
 while true; do
-    response_code=$(curl -s -o /dev/null -w "%{http_code}" $server_address/healh)
+    response_code=$(curl -s -o /dev/null -w "%{http_code}" $server_address/health)
     
     if [ "$response_code" -eq 200 ]; then
         echo "Health check passed: $response_code"
